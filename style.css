@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+
+p {
+    font-size: 18px;
+
+}
+
+html {
+    height: 100%;
+    width: 375px;
+}
+
+body {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+}
+
+/* header */
+
+header {
+    grid-row: 1/2;
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    height: 52vh;
+    border-radius: 0 0 30px 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+body>header>h3.h3h {
+    margin: 5%;
+    color: rgba(255, 255, 255, 0.726);
+    font-weight: 700;
+}
+
+header div.rond {
+    border-radius: 90px;
+    height: 20vh;
+    width: 20vh;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+}
+
+header div.text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+header p.chiffre {
+    font-size: 56px;
+    color: white;
+    font-weight: 800;
+}
+
+header p.chiffre+p {
+    color: rgba(255, 255, 255, 0.308);
+    font-weight: 500;
+}
+
+header div section {
+    height: 20vh;
+    width: 20vh;
+    position: relative;
+    top: 14%;
+}
+
+div.text {
+    margin-top: 6%;
+}
+
+div.text h2 {
+    color: white;
+    font-weight: 500;
+    margin-bottom: 4%;
+}
+
+div.text h2+p {
+    color: rgba(255, 255, 255, 0.555);
+    width: 80%;
+}
+
+/* body main */
+
+main h3.h3m {
+    margin: 5%;
+    align-self: baseline;
+}
+
+main div.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    width: 85%;
+}
+
+main div.container>div,
+body>main>div>button {
+    align-self: baseline;
+    padding: 5% 3%;
+    margin: 2% 6%;
+    align-items: center;
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+    border: none;
+}
+
+body>main>div>button {
+    width: 105%;
+}
+
+main div.container>div>div {
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+}
+
+main div div p {
+    margin-left: 3%;
+    font-weight: 500;
+    font-weight: 700;
+}
+
+main div.container div.Reaction p {
+    color: hsl(0, 100%, 67%);
+}
+
+main div div.Memory p {
+    color: hsl(39, 100%, 56%);
+}
+
+main div div.Verbal p {
+    color: hsl(166, 100%, 37%);
+}
+
+main div div.Visual p {
+    color: hsl(234, 85%, 45%);
+}
+
+main div button a {
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    text-decoration: none;
+    width: 100%;
+    height: 150%;
+}
+
+
+
+div.Reaction {
+    background-color: hsla(0, 100%, 67%, 0.089);
+}
+
+div.Memory {
+    background-color: hsla(39, 100%, 56%, 0.089);
+}
+
+div.Verbal {
+    background-color: hsla(166, 100%, 37%, 0.089);
+}
+
+div.Visual {
+    background-color: hsl(241, 100%, 89%, 0.2);
+}
+
+button.Continue {
+    justify-content: center;
+    border-radius: 50px !important;
+    background-color: hsl(224, 30%, 27%);
+    color: white;
+}
+
+body main div button:hover {
+    background-color: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0)) !important;
+}
+
+/* main flexbox */
+
+span.un {
+    font-weight: 700;
+    margin-right: 3%;
+}
+
+span.deux {
+    color: rgb(163, 163, 163);
+    font-weight: 700;
+}
+
+@media screen and (min-width:1440px) {
+
+    html {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    body {
+        grid-template-columns: repeat(2, 1fr);
+        background-color: white;
+        width: 75vh;
+        gap: 5%;
+        box-shadow: 0px 15px 15px 15px rgba(4, 0, 255, 0.201);
+        height: auto;
+        border-radius: 30px 30px 30px 30px;
+    }
+
+    main {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        width: 90%;
+    }
+
+    body>header {
+        border-radius: 30px 30px 30px 30px;
+        height: 55vh;
+        display: grid;
+        grid-column: 1fr;
+    }
+
+    body>header>div.rond {
+        margin-left: 5em;
+        height: 19vh;
+        width: 19vh;
+    }
+
+    header div section {
+        height: 19vh;
+        width: 19vh;
+        top: 20%;
+    }
+
+    header div.text {
+        height: auto;
+        margin-bottom: 15%;
+    }
+
+    div.attribution {
+        display: none;
+    }
+
+    body>header>h3.h3h {
+        font-weight: 800;
+    }
+
+    main h3.h3m,
+    main h3.h3h {
+        height: auto;
+        font-weight: 800;
+    }
+
+    main div.container {
+        height: 25em;
+        justify-content: unset;
+
+    }
+
+    main div.container div {
+        margin-bottom: 7%;
+    }
+
+    main div.container div div {
+        margin: 0;
+    }
+
+    body>main>div>button {
+        margin-top: 2em;
+    }
+
+    main div button a {
+        position: relative;
+        top: 20%;
+    }
+
+
+}
